@@ -1,0 +1,99 @@
+/* THIS IS MY CUSTOM CSS FILE! Maybe i wanted cool buttons, or something like that */
+
+/*
+ * CUSTOM BUTTONS!
+ */
+.btn-custom {
+  background-color: #7F00FF;
+  color: white;
+  border: none;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  background-color: #B19CD9;
+  color: white;
+}
+
+.btn-custom2 {
+    background-color: #FFA500;
+    color: white;
+    border: none
+}
+
+.btn-custom2:hover,
+.btn-custom2:focus {
+    background-color: #FFDBBB;
+    color: white;
+}
+
+.btn-custom3 {
+    background-color: #8B0000;
+    color: white;
+    border: none;
+}
+
+.btn-custom3:hover,
+.btn-custom3:focus {
+    background-color: #FAA0A0;
+    color: white;
+}
+
+/*
+This button was made with ChatGPT 🥸
+*/
+.btn-rainbow-hover {
+  background: white;
+  color: black;
+  border: 2px solid transparent;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Hover state with rainbow animation */
+.btn-rainbow-hover:hover {
+  color: white;
+  border: none;
+}
+
+/* Rainbow animation overlay */
+.btn-rainbow-hover::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    270deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  background-size: 400% 100%;
+  z-index: -1;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+  animation: rainbowShift 5s linear infinite;
+}
+
+/* Show the rainbow on hover */
+.btn-rainbow-hover:hover::before {
+  opacity: 1;
+}
+
+/* Gradient animation */
+@keyframes rainbowShift {
+  0% { background-position: 0% }
+  100% { background-position: 100% }
+}

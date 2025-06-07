@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>My Projects and me 🥴</title>
+    <!--GET BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--GET LOGOS FROM FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--Get css from carousel.css-->
+    <link href="/static/carousel.css" rel="stylesheet">
+    <!--GET MY CUSTOM CSS!-->
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body class="bg-dark text-light">
+<main>
+<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+    </div> <div class="carousel-inner">
+    <div class="carousel-item">
+        <img src="https://resources.premierleague.pulselive.com/photo-resources/2021/04/16/07add54c-938a-4b36-89aa-58318f717485/HOF-Inductees-Henry.jpeg?width=1600&height=700"
+        class="d-block w-100" alt="Thierry Henry, Arsenal legend shushing opposition fans" style="object-fit: cover; filter: brightness(60%);"/>
+        <div class="container">
+            <div class="carousel-caption text-start">
+                <h1>More about Me!</h1>
+                <p class="text-bold">Once again, my name is Elisha, and I love coding, cooking, and playing ⚽. I'm 17 years
+                    old, and my favorite part about code is when everything finally comes together. Cliché I know. 😭 I started
+                learning how to code from Angela Yu's course, which wasn't even bought by me as a matter of fact, and I dreaded
+                it. But now I love it! Pictured in the background is Arsenal legend Thierry Henry.</p>
+                <p>
+                    <a class="btn btn-primary btn-lg" href="#featurettes">See my Projects down below!</a>
+                    <a class="btn btn-custom btn-lg" href="{{ url_for('home') }}">Return Home🏡</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="/static/assets/img/blog-image.png" class="d-block w-100" style="object-fit: cover;
+        object-position: center 0%; height: 100%; filter: brightness(30%);"/>
+        <div class="container">
+            <div class="carousel-caption">
+            <h1>Blog Website.</h1>
+            <p>I made this site originally as part of Angela Yu's 100 days of Python bootcamp, and I didn't do much
+                with it. However, once she taught us (the students) how to deploy our project live,
+                it inspired me to add many more features to it, and make the website truly my own.</p>
+            <p><a class="btn btn-custom3 btn-lg" href="https://day-70-blog-deployed.onrender.com">Check out my blog!
+                (Live until June 22)</a></p>
+        </div>
+        </div>
+    </div>
+    <div class="carousel-item active">
+        <img src="/static/assets/img/github.jpg" class="d-block w-100" style="object-fit: cover;
+        object-position: center 50%; height: 100%; filter: brightness(70%);"/>
+        <div class="container">
+        <div class="carousel-caption text-end">
+            <h1>My Code Inventory.</h1>
+            <p>Explore my GitHub, and see what I have going on. 😏</p>
+            <p><a class="btn btn-custom2 btn-lg" href="https://github.com/HolaSenorPython">Check out my GitHub!</a></p>
+        </div>
+    </div>
+    </div>
+</div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span> </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span>
+    </button>
+</div> <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <!--THIS IS MY LITTLE HERO-->
+    <div class="container marketing">
+        <div class="px-4 py-5 my-5 text-center">
+            <img class="d-block mx-auto mb-4" src="/static/assets/img/troll-dance.gif" alt="Troll face doing
+            a little jig (dance)" width="72" height="57">
+            <h1 class="display-5 fw-bold">My Projects and Me</h1>
+            <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Caption says it all. A short journey through some things I've made. Some of these
+            were pain, but what doesn't kill you... 🤷🏾‍♂️</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <a type="button" class="btn btn-primary btn-lg" href="#featurettes">Start Scrolling! ⬇️</a>
+                    <a type="button" class="btn btn-custom2 btn-lg" href="https://github.com/HolaSenorPython/python-projects-bootcamp">
+                        See ALL my projects in one GitHub repo!
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- START THE FEATURETTES -->
+        <hr class="featurette-divider my-4">
+        <div class="row featurette" id="featurettes">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Elisha's Blog (The Blog Project)</h2>
+                <p class="lead pt-4">One of my favorite projects. It spanned multiple days in the course, and I learned
+                    more and more as I worked on it: Authentication with Flask, FlaskWTForms, Databases,
+                    etc. Although some days it was a little tough, overall I loved making it, and I'm glad I can have
+                something I can call mine out there on the web. Deploying it was a teensy bit confusing at first 😅
+                because I didn't understand GitHub and Git and Render, but I got the hang of it eventually (not
+                without help from Angela of course! 🤥) All in all: I'm proud of it, and it was an important step
+                in my growth as a programmer.</p>
+            </div>
+            <div class="col-md-5">
+                 <img src="/static/assets/img/blog-image2.png"
+                    class="featurette-image img-fluid mx-auto"
+                    style="width: 100%; height: 100%; object-fit: cover; object-position: center;"
+                    alt="An image from a portion of my Blog Site"/>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Days 51-52: Twitter & Instagram Bot</h2>
+                <p class="lead pt-4">Throughout a time period of around 5-6 days, the course covered Selenium and automation.
+                Honestly? It was really fun and cool to think about! I could make a bot do things I'm too lazy to do,
+                or have a bot go on Instagram! Obviously, with great power comes great, GREAT responsibility, and I
+                would never do anything malicious. But it was really fun making these accounts for my bot to tweet or
+                follow someone on Insta all without me laying a finger! The sad part? I couldn't make this code live!
+                (at least for free.) I was excited to have my bot tweet once a day complaining about our internet, but
+                unfortunately that didn't happen. 😔 But these were some of my favorite days in the course as well.
+                To the left is one of the accounts that was automated. 😳</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="/static/assets/img/twitter-bot.png"
+                    class="featurette-image img-fluid mx-auto"
+                    style="width: 100%; height: 100%; object-fit: cover; object-position: center;"
+                    alt="An image of one of the bot accounts."
+                />
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Days 20-25: Game Development</h2>
+                <p class="lead pt-4">I think all people with a slight interest in code have wanted to make a game before.
+                These days were fun, and it felt superb to have games on my PC that I could call my own. The games ranged
+                    from old arcade classics like Snake and Pong, to a U.S. States quiz game! (That was my
+                favorite game made.) I also reckon they were pretty fun games too 😏. However, I must clarify that
+                while most of the course involves the student coding and doing stuff on their own, you still have videos
+                and Angela to guide you. This point is important to mention when I speak of the FINAL project I want to
+                    showcase next. (I'm also very proud of it!) Pictured to the right is the Snake Game.</p>
+            </div>
+            <div class="col-md-5">
+                <img src="/static/assets/img/snake-game.png"
+                     class="featurette-image img-fluid mx-auto"
+                     style="width: 100%; height: 100%; object-fit: cover; object-position: center;"
+                     alt="An image of one of the bot accounts."
+                     />
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">My Portfolio Website! (Day 82)</h2>
+                <p class="lead pt-4">Yes. The big reveal. I am very proud with this website and the way it turned out!
+                    You see, starting from Day 81 onward, there are no videos or anything anymore, one merely makes what
+                    it says for that day. Bootstrap snippets are lifesavers. 🤣 But it feels so good to have completed
+                    this project. Honestly, this is probably not what a portfolio website looks like traditionally, and
+                    I'm fine with that. This website is authentic. It's me! And I love it! I hope you, the user, are
+                    enjoying it as well. Cheers to many more projects I will contribute to the web one day! 🍷
+                </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="/static/assets/img/vini-celly.gif"
+                    class="featurette-image img-fluid mx-auto"
+                    style="width: 100%; height: 100%; object-fit: cover; object-position: center;"
+                    alt="An image of one of the bot accounts."
+                />
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <!-- /END THE FEATURETTES -->
+    </div>
+    <!-- /.container -->
+    <!-- FOOTER -->
+    <footer class="mt-auto py-3 bg-dark text-white text-center">
+        <div class="container">
+            <a href="https://github.com/HolaSenorPython" class="text-white me-3">
+                  <i class="fab fa-github fa-3x"></i>   <!-- GitHub icon -->
+            </a>
+            <a href="https://www.instagram.com/elishafooty" class="text-white ms-3">
+                  <i class="fab fa-instagram fa-3x"></i>    <!-- Instagram icon -->
+            </a>
+          <p class="mb-0">My socials ⬆️⬆️<br>
+              Made with ❤️ by Elisha N. Built with Bootstrap.</p>
+        </div>
+    </footer>
+</main>
+<!--Bootstrap Core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
