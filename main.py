@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, flash, redirect, url_for
 from dotenv import load_dotenv
 from forms import ContactForm
-from flask_bootstrap import Bootstrap5
+from flask_bootstrap import Bootstrap
 import smtplib
 import os
 from email.message import EmailMessage
@@ -9,7 +9,7 @@ load_dotenv()
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('FLASK_KEY')
-bootstrap = Bootstrap5(app)
+bootstrap = Bootstrap(app)
 
 # Def the send email function, which will send emails lol (GOES WITH CONTACT FORM)
 def send_email(name, email, message):
