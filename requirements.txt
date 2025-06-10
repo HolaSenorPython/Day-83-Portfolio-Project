@@ -1,4 +1,4 @@
-Bootstrap_Flask==2.5.0
+Bootstrap-Flask==2.5.0
 dotenv~=0.9.9
 python-dotenv~=1.1.0
 Flask-WTF==1.2.2
