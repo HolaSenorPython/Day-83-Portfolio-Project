@@ -27,7 +27,8 @@
         full-stack development as part of Angela Yu's bootcamp. I like building small projects and learning more
         about the web. Click the button below to learn more about these projects and me! 😁</p>
     <p class="lead">
-        <a href="{{ url_for('portfolio') }}" class="btn btn-rainbow-hover btn-lg">Let's Go! 👟</a>
+        <a href="{{ url_for('portfolio') }}" class="btn btn-rainbow-hover btn-lg"
+        id="homeBtn">Let's Go! 👟</a>
     </p>
 </main>
 <!--THIS IS THE FOOTER!-->
@@ -45,6 +46,10 @@
 </footer>
 <!--END OF FOOTER (for copy n paste purposes)-->
 </div>
+<!--MY CUSTOM JS and HIDDEN audio--> <!--Hidden because I added no parameter for "controls"-->
+<audio src="static/assets/audio/sonic-ring-sound.mp3"
+id="hiddenSound"></audio>
+<script src="static/homepage.js"></script>
 <!--Bootstrap Core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
